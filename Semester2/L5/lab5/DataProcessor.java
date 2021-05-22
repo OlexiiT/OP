@@ -31,13 +31,13 @@ public class DataProcessor {
         int taskNumber;
         double res;
         String s = request.getParameter("taskNumber");
-        if (s.equals("task19")) {
+        if ("task19".equals(s)) {
             taskNumber = 19;
             res = Task19.getResult(a, b, c, d);
-        } else if (s.equals("task20")) {
+        } else if ("task20".equals(s)) {
             taskNumber = 20;
             res = Task20.getResult(a, b, c, d);
-        } else if (s.equals("task21")) {
+        } else if ("task21".equals(s)) {
             taskNumber = 21;
             res = Task21.getResult(a, b, c, d);
         } else {
